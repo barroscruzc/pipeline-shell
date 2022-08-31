@@ -1,7 +1,5 @@
-job:
-  script:
-  - echo "Olá, pessoal! Estou aprendendo sobre pipeline."
-  - echo "Este é um teste"
 build:
+  stage: build
   script:
-  - echo "Mais um teste"
+  - mvn clean
+  - mvn package -Dmaven.test.skip
