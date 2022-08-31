@@ -1,5 +1,8 @@
+image: maven
+
 build:
   stage: build
   script:
+  - 
   - mvn clean
   - mvn package -Dmaven.test.skip
